@@ -1,0 +1,22 @@
+
+# Criação de tabela
+
+CREATE TABLE fechamento_caixa (
+    id INTEGER PRIMARY KEY,
+    data TEXT,
+    hora_abertura TEXT,
+    hora_fechamento TEXT,
+    valor_inicial REAL,
+    vendas_dinheiro REAL,
+    vendas_cartao REAL,
+    descontos REAL,
+    troco REAL,
+    valor_final REAL,
+    observacoes TEXT
+);
+
+# Inserido dados:
+
+
+NSERT INTO fechamento_caixa (data, hora_abertura, hora_fechamento, valor_inicial, vendas_dinheiro, vendas_cartao, descontos, troco, valor_final, observacoes)
+VALUES ('2023-05-03', '09:00:00', '18:00:00', 500.00, 1500.00, 1000.00, 200.00, 50.00, 1550.00, 'Venda de produtos')
